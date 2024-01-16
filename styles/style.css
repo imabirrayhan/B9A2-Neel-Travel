@@ -1,31 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;800&display=swap');
 
-header {
-    padding: 40px 130px;
-}
 * {
     font-family: 'Work Sans', sans-serif;
+}
+
+header {
+    padding: 52px 260px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
 }
 
 nav img {
     width: 3rem;
     height: 3rem;
 }
-nav {
+
+.nav-img {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
 }
 
-nav > ul {
+nav>ul {
     display: flex;
-    font-size: 18px;
+    justify-content: center;
+    gap: 44px;
 }
 
 nav li {
     list-style: none;
-    /* margin-right: 44px; */
-    padding: 10px;
+    margin-right: 20px;
+    color: #424247;
     font-size: 1rem;
+    font-weight: 400;
 }
 
 nav li a {
@@ -33,21 +45,125 @@ nav li a {
     color: #424247;
 }
 
-.nav-title {
+.home {
     color: #FF5400;
+    font-size: 1rem;
+    font-weight: 700;
 }
-.travel-color {
+
+.nav-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #131318;
+}
+
+.nav-title-two {
     color: #FF5400;
 }
 
+.banner {
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 16px;
+    background: url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.banner-title {
+    color: #FFF;
+    font-size: 3rem;
+    font-weight: 700;
+    padding-top: 100px;
+}
+
+.banner-descrip {
+    color: #FFF;
+    font-size: 1rem;
+}
+
+.index {
+    display: flex;
+    text-align: center;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    display: inline-flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 100px;
+}
+
+.index input {
+    border-radius: 8px;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.find-now input {
+    background: #FF5400;
+    border-radius: 8px;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+}
+
+/* banner end */
+
+.popular-tour {
+    display: flex;
+    margin-top: 200px;
+    gap: 20px;
+}
+
+.popular-tour-title {
+    color: #131318;
+    font-size: 2.4rem;
+    font-weight: 800;
+}
+
+.popular-tour-content .popular-tour-descrip {
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 30px;
+
+}
+
+.read-more {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 800;
+    font-family: Mulish;
+    border-radius: 8px;
+    background: #FF5400;
+    padding: 14px 30px;
+    margin-top: 35px;
+}
+
+
 /* mobile device */
- /* @media screen and (max-width: 576px) { 
-    padding: 20px;
+@media screen and (max-width:576px) {
+    header {
+        padding: 20px;
+    }
+
+    nav,
+    nav>ul,
+    .index,
+    .popular-tour,
+    .your-destination-img-container {
+        flex-direction: column;
+    }
+
+    nav {
+        align-items: start;
+    }
+
+    .banner {
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
-nav, nav>ul{
-    flex-direction: column;
-}
-nav{
-    align-items: start;
-}
-*/
